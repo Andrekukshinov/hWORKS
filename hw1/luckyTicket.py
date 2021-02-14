@@ -6,12 +6,12 @@ def twoTicketsInRow():
         # print(digits)
         for digitsRunner in digits:
             digSum += int(digitsRunner)
-        if digSum == 7:
+        if digSum % 7 == 0:
             counter = counter + 1
-            print(digits, " is lucky")
         else:
             counter = 0
         if counter == 2:
+            print(runner, " ", runner - 1)
             return True
     return False
 #
